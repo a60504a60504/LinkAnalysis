@@ -1,6 +1,7 @@
 # LinkAnalysis
 ---
 ## Implementation detail 
+### HITS_Pagerank.py
 * 使用 networkx package
 * HITS 
   * 產生 authority與hub
@@ -9,6 +10,6 @@
   * alpha = 0.15 代表 damping factor=0.15
 ## Result analysis and discussion 
 
-## Computation performance analysis 
+## Computation performance analysis 
 
-## Discussion
+## Discussion
