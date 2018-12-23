@@ -1,6 +1,13 @@
 # LinkAnalysis
 
 ## Implementation detail 
+### Run.bat
+* 將執行IBMdata2graph.py、HITS_Pagerank.py、SimRank.py
+* 需要安裝套件
+  * networkx
+  * pandas
+  * matplotlib
+* 透過windows執行Run.bat
 ### IBMdata2graph.py
 * 從project1的IBM資料產生兩筆有向圖(directed graph)
   * graph_7:其中一筆為在同一個transaction底下的items做單向(directed)連接e.g. 1 ---> 2 ---> 3 ---> 4
