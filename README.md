@@ -22,6 +22,8 @@
   * alpha = 0.15 代表 damping factor=0.15
 ### SimRank.py
 * 使用 networkx package輔助繪圖
+
+---
 ## Result analysis and discussion 
 ### Graph Topology
 * graph_1 <br />  
@@ -40,9 +42,10 @@
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_7.png)
 * graph_8 <br /> 
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_8.png)
-
+---
 ## Computation performance analysis 
 
+---
 ## Discussion
 ### More limitations about link analysis algorithms 
 ### Can link analysis algorithms really find the “important” pages from Web? 
