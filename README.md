@@ -18,6 +18,7 @@
 ## Result analysis and discussion 
 ### Graph Topology
     依序為grpah_1至graph_8
+
 * graph_1
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_1.png)
 * graph_2
