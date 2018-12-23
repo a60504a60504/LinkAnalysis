@@ -18,21 +18,21 @@
 ## Result analysis and discussion 
 ### Graph Topology
     依序為grpah_1至graph_8
-graph_1
+* graph_1
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_1.png)
-graph_2
+* graph_2
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_2.png)
-graph_3
+* graph_3
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_3.png)
-graph_4
+* graph_4
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_4.png)
-graph_5
+* graph_5
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_5.png)
-graph_6
+* graph_6
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_6.png)
-graph_7
+* graph_7
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_7.png)
-graph_8
+* graph_8
 ![image](https://github.com/a60504a60504/LinkAnalysis/blob/master/Picgraph_8.png)
 
 ## Computation performance analysis 
