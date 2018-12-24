@@ -1,3 +1,5 @@
+HITS cost 0.000000 sec
+PageRank cost 0.000000 sec
 graph_1 :
 Hub:
 1 : 0.2
@@ -21,6 +23,8 @@ PageRank:
 5 : 0.17170405399576824
 6 : 0.17171512821451823
 
+HITS cost 0.000000 sec
+PageRank cost 0.000000 sec
 graph_2 :
 Hub:
 1 : 0.2
@@ -41,6 +45,8 @@ PageRank:
 4 : 0.2
 5 : 0.2
 
+HITS cost 0.000000 sec
+PageRank cost 0.000000 sec
 graph_3 :
 Hub:
 1 : 0.1909830056647784
@@ -58,6 +64,8 @@ PageRank:
 3 : 0.26744190185546873
 4 : 0.23255809814453124
 
+HITS cost 0.001029 sec
+PageRank cost 0.000998 sec
 graph_4 :
 Hub:
 1 : 0.2754531765654345
@@ -84,6 +92,8 @@ PageRank:
 7 : 0.12649943813058034
 6 : 0.12749092415597096
 
+HITS cost 0.109675 sec
+PageRank cost 0.000000 sec
 graph_5 :
 Hub:
 1 : 1.0324628273669713e-19
@@ -1496,6 +1506,8 @@ PageRank:
 438 : 0.002058565141462323
 461 : 0.002058565141462323
 
+HITS cost 3.056393 sec
+PageRank cost 0.046833 sec
 graph_6 :
 Hub:
 1 : 0.002691682627007344
@@ -5185,6 +5197,8 @@ PageRank:
 416 : 0.0008014404999213427
 1024 : 0.0008014404999213427
 
+HITS cost 0.013964 sec
+PageRank cost 0.000997 sec
 graph_7 :
 Hub:
 4 : 8.478256961332574e-28
@@ -5298,6 +5312,8 @@ PageRank:
 24 : 0.026041605176438207
 0 : 0.024140543292009153
 
+HITS cost 0.015622 sec
+PageRank cost 0.000000 sec
 graph_8 :
 Hub:
 4 : 0.006484718601431361

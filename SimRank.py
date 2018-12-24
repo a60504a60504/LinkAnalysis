@@ -3,6 +3,7 @@ import copy
 import networkx as nx
 import matplotlib.pyplot as plt
 import csv
+import time
 
 def OpenGraphFile(Filename):
     with open(Filename, 'rb') as inf:
@@ -37,7 +38,6 @@ def Simrank(G, C=0.9, max_iter=100):
 
     # recursively calculate simrank
     for iter_ctr in range(max_iter):
-        print (iter_ctr)
         if _is_converge(sim, sim_old):
             break
         sim_old = copy.deepcopy(sim)
@@ -58,7 +58,11 @@ if __name__ == '__main__':
     GraphFile = ['graph_1','graph_2','graph_3','graph_4','graph_5']
     for gf in GraphFile:
         G = OpenGraphFile(gf+'.txt')
+        
+        tStart = time.time()
         SR = Simrank(G, C=0.85, max_iter=100)
+        tEnd = time.time()
+        print ("SimRank cost %f sec" % (tEnd - tStart))
         
         print (gf,':')
         print ('SimRank:')

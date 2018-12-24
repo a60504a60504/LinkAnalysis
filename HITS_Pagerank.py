@@ -1,6 +1,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import csv
+import time
 
 def OpenGraphFile(Filename):
     with open(Filename, 'rb') as inf:
@@ -17,8 +18,16 @@ if __name__ == '__main__':
     GraphFile = ['graph_1','graph_2','graph_3','graph_4','graph_5','graph_6','graph_7','graph_8']
     for gf in GraphFile:
         G = OpenGraphFile(gf+'.txt')
+        
+        tStart = time.time()
         h,a = nx.hits(G, max_iter=1000)
+        tEnd = time.time()
+        print ("HITS cost %f sec" % (tEnd - tStart))
+        
+        tStart = time.time()
         pr = nx.pagerank(G, alpha=0.15)
+        tEnd = time.time()
+        print ("PageRank cost %f sec" % (tEnd - tStart))
         
         print (gf,':')
         print ('Hub:')
