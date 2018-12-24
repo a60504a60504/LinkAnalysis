@@ -168,10 +168,19 @@
 ---
 ## Discussion
 ### More limitations about link analysis algorithms 
+應該對同一時間段產生的網站節點，做HITS或Pagerank才有意義。
+或者產生一個時間函數，時間越靠近現在的權重數值越高、越古老的權重數值越低。
+並在simrank高的兩端降低納入HITS或pagerank的權重。
 ### Can link analysis algorithms really find the “important” pages from Web? 
+首先要先了解什麼是"important"的，如果是指擁有大量進出連結的網頁代表重要的，那在HITS、Pagerank中找出來的高數值都代表著過去相當多的連進連出。
+但如果"重要"的是網頁內容品質，那以HITS與pagerank可能在某些情況無法保證內容品質是高的、並且有可能有一些剛出爐的網頁其內容品質很高卻被HITS、Pagerank評為0，只因為沒有連結。
 ### What are practical issues when implement these algorithms in a real Web? 
     Performance discussion (time cost) 
+
 ### What do the result say for your actor/movie graph?  
+
 ### Any new idea about the link analysis algorithm? 
+
 ### What is the effect of “C” parameter in SimRank? 
+用來做遞減參數必須介於0與1之間，假設有A節點到B節點會經過5層，那就會有總共C^5的遞減進入計算，也就是說節點相差越遠越不相似的概念。
 ### Design a new link-based similarity measurement 
