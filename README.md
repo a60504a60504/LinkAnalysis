@@ -201,12 +201,24 @@
 ## Computation performance analysis 
 ### HITS
 一個iteration所需的time complexity O(|E(G)|)
+#### 表為每張graph運行時間(sec)
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|----------|----------|----------|----------|----------|
+| 0 | 0 | 0 | 0.001029 | 0.109675 | 3.056393 | 0.013964 | 0.015622 |
 
 ### Pagerank
 所需的time complexity O(n+m) n是node數 m是edge數
+#### 表為每張graph運行時間(sec)
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|
+| 0 | 0 | 0 | 0.000998 | 0 | 0.046833 | 0.000997 | 0 |
 
 ### Simrank
 所需的time complexity O(Kn^2d)  K是The number of iterations n是node數 d是|I(a)|\*|I(b)|的平均
+#### 表為每張graph運行時間(sec)
+| 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|
+| 0 | 0 | 0 | 0.031243 | 13.584184 |
 
 ---
 ## Discussion
@@ -217,7 +229,10 @@
 但如果"重要"的是網頁內容品質，那以HITS與pagerank可能在某些情況無法保證內容品質是高的、並且有可能有一些剛出爐的網頁其內容品質很高卻被HITS、Pagerank評為0，只因為沒有連結。
 ### What are practical issues when implement these algorithms in a real Web? 
     Performance discussion (time cost) 
-
+- 比較Time cost來說，使用Pagerank運算會比HITS來的快速一些，但HITS的資訊量會比Pagerank來的多
+- 至於simrank屬於linked-based的相似度測量，效率肯定最差
+- 但是如果想要再精準度上在做精進的測量，勢必需要更多的節點資訊，那計算量肯定會比目前的演算法複雜，至於如何取捨就得看使用者想要的重要資料定義精細或模糊，運行時間的取捨可能也會是重點
+- 當然也有一種方法就是先快速大範圍搜索，找出可能重要的節點再運用複雜精密的評估演算法找出重要資訊，或許可以應用在生活。
 ### Any new idea about the link analysis algorithm? 
 產生一個時間函數，時間越靠近現在的權重數值越高、越古老的權重數值越低。
 並在simrank高的兩端降低納入HITS或pagerank的權重。
