@@ -226,6 +226,9 @@
 
 ---
 ## Discussion
+###  Find a way (e.g., add/delete some links) to increase hub, authority, and PageRank of Node 1 in first 3 graphs respectively. 
+- 對Node 1加很多連入或減少連出的links PageRank和Hub增加
+- 對Node 1加很多連出或減少連入的links Authority增加
 ### More limitations about link analysis algorithms 
 應該對同一時間段產生的網站節點，做HITS或Pagerank才有意義。
 ### Can link analysis algorithms really find the “important” pages from Web? 
