@@ -22,6 +22,10 @@
   * alpha = 0.15 代表 damping factor=0.15
 ### SimRank.py
 * 使用 networkx package輔助繪圖
+* 計算graph_1到graph_5每個節點連線的simrank
+* Simrank
+  * 產生simrank
+  * C是damping factor設定為0.85
 
 ---
 ## Result analysis and discussion 
