@@ -8,6 +8,7 @@
   * pandas
   * matplotlib
 * 透過windows執行Run.bat
+* 會將執行結果輸出分別存在各式開頭Output.txt
 ### IBMdata2graph.py
 * 從project1的IBM資料產生兩筆有向圖(directed graph)
   * graph_7:其中一筆為在同一個transaction底下的items做單向(directed)連接e.g. 1 ---> 2 ---> 3 ---> 4
@@ -20,12 +21,15 @@
 * Pagerank 
   * 產生 pr
   * alpha = 0.15 代表 damping factor=0.15
+* 產生authority、hub、Pagerank的csv檔案
+* 產生每種graph實際簡圖
 ### SimRank.py
 * 使用 networkx package輔助繪圖
 * 計算graph_1到graph_5每個節點連線的simrank
 * Simrank
   * 產生simrank
   * C是damping factor設定為0.85
+* 產生Simrank的csv檔案
 
 ---
 ## Result analysis and discussion 
